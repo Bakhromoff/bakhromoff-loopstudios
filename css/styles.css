@@ -47,6 +47,10 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* :focus{
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
 
 body {
   display: flex;
@@ -94,6 +98,13 @@ img {
 }
 .logo-link {
   display: block;
+  transition: opacity 0.4s ease;
+}
+.logo-link:hover{
+  opacity: 0.8;
+}
+.logo-link:active{
+  opacity: 0.6;
 }
 .logo-img {
   display: block;
@@ -121,6 +132,15 @@ img {
   display: flex;
   text-decoration: none;
   color: var(--text-white-color);
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s ease, opacity 0.4s ease;
+}
+.sitenav-link:hover{
+  border-bottom: 2px solid #fff;
+}
+.sitenav-link:active{
+  opacity: 0.6;
 }
 
 .hero-heading {
@@ -210,6 +230,17 @@ img {
   letter-spacing: 5px;
   text-transform: uppercase;
   color: var(--text-black-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.creatons-link:focus{
+  outline: 2px dashed rgba(0, 0, 0, 0.6);
+}
+.creatons-link:hover{
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+}
+.creatons-link:active{
+  background-color: rgb(0, 0, 0, 0.8);
 }
 .creations-list {
   display: flex;
@@ -233,11 +264,18 @@ img {
 .creations-item-content{
   padding: 354px 110px 32px 40px;
 }
+
 .creations-item-link {
-  display: block;
+  display: flex;
   text-decoration: none;
   color: var(--text-white-color);
-
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.creations-item-link:hover{
+  color: #000;
+}
+.creations-item-link:active{
+  opacity: 0.6;
 }
 .deep-earth{
   background-image: url(../img/deep-earth.jpg);
@@ -321,6 +359,13 @@ img {
 .footer-logo-link{
   display: block;
   margin-bottom: 24px;
+  transition: opacity 0.4s ease;
+}
+.footer-logo-link:hover{
+  opacity: 0.8;
+}
+.footer-logo-link:active{
+  opacity: 0.6;
 }
 .socials-siteinfo-wrapper {
   display: flex;
@@ -343,6 +388,15 @@ img {
 }
 .socials-item-link {
   text-decoration: none;
+  padding-bottom: 8px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.4s ease, opacity 0.4s ease;
+}
+.socials-item-link:hover{
+  border-bottom: 2px solid #fff;
+}
+.socials-item-link:active{
+  opacity: 0.6;
 }
 .socials-img {
   width: 24px;
@@ -356,4 +410,44 @@ img {
   color: var(--text-white-color);
   opacity: 0.5;
   margin: 0;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+
+  .header-hero-wrapper {
+    background-image: url(../img/hero@2x.jpg);
+  }
+  .interactive-vr{
+    background-image: url(../img/vr@2x.jpg);
+  }
+  .deep-earth{
+    background-image: url(../img/deep-earth@2x.jpg);
+  }
+  .night-arcade{
+    background-image: url(../img/arcade@2x.jpg);
+  }
+  .soccer-team{
+    background-image: url(../img/soccer@2x.jpg);
+  }
+  .the-grid{
+    background-image: url(../img/thegrid@2x.jpg);
+  }
+  .from-up{
+    background-image: url(../img/from-up@2x.jpg);
+  }
+  .pocket-borealis{
+    background-image: url(../img/pocket@2x.jpg);
+  }
+  .the-curiosity{
+    background-image: url(../img/curiosity@2x.jpg);
+  }
+  .make-it{
+    background-image: url(../img/fish-eye@2x.jpg);
+  }
 }
