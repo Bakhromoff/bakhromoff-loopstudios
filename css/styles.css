@@ -241,6 +241,7 @@ img {
 .creatons-link:active{
   background-color: rgb(0, 0, 0, 0.8);
 }
+
 .creations-list {
   display: flex;
   flex-wrap: wrap;
@@ -262,8 +263,14 @@ img {
 
 .creations-item-content{
   padding: 354px 110px 32px 40px;
+  transition: opacity 0.4s ease;
 }
-
+.creations-item-content:hover{
+  opacity: 0.6;
+}
+.creations-item-content:active{
+  opacity: 0.5;
+}
 .creations-item-link {
   display: flex;
   text-decoration: none;
