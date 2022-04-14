@@ -48,7 +48,7 @@ html {
 }
 * :focus{
   outline: 2px solid #fff;
-  outline-offset: 3px;
+  outline-offset: 5px;
 }
 
 body {
@@ -242,7 +242,8 @@ img {
   transition: background-color 0.4s ease, color 0.4s ease;
 }
 .creatons-link:focus{
-  outline: 2px dashed rgba(0, 0, 0, 0.6);
+  outline: 2px dashed rgba(235, 42, 242, 0.6);
+  outline-offset: 3px;
 }
 .creatons-link:hover{
   background-color: rgb(0, 0, 0);
@@ -273,6 +274,10 @@ img {
   width: 255px;
   height: 450px;
   text-decoration: none;
+}
+.creations-item-link:focus{
+  outline: 3px solid #000;
+  outline-offset: 3px;
 }
 .creations-item-link::before{
   position: absolute;
@@ -407,29 +412,5 @@ only screen and (                min-resolution: 2dppx) {
   }
   .interactive-vr{
     background-image: url(../img/vr@2x.jpg);
-  }
-  .deep-earth{
-    background-image: url(../img/deep-earth@2x.jpg);
-  }
-  .night-arcade{
-    background-image: url(../img/arcade@2x.jpg);
-  }
-  .soccer-team{
-    background-image: url(../img/soccer@2x.jpg);
-  }
-  .the-grid{
-    background-image: url(../img/thegrid@2x.jpg);
-  }
-  .from-up{
-    background-image: url(../img/from-up@2x.jpg);
-  }
-  .pocket-borealis{
-    background-image: url(../img/pocket@2x.jpg);
-  }
-  .the-curiosity{
-    background-image: url(../img/curiosity@2x.jpg);
-  }
-  .make-it{
-    background-image: url(../img/fish-eye@2x.jpg);
   }
 }
